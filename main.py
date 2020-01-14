@@ -48,7 +48,7 @@ data = [
 
 def convert(d):
 
-    # 'третье ноября одна тысяча восемьсот двенадцатого года двадцать один час ноль минут ноль секунд'
+
     d = (d.replace(".", " ").replace(":", " ").split())
 
     res = [data[0][int(d[0]) - 1], data[1][int(d[1]) - 1]]
@@ -123,7 +123,7 @@ def convert(d):
     else:
         res.append("секунд")
 
-    # хак удаляет лишнии пробелы
+    # хак удаляет лишние пробелы
     res = ' '.join(res)
     res = res.split()
     res = ' '.join(res)
